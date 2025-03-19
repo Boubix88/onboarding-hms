@@ -1,8 +1,18 @@
 {
-  "extends": "@repo/typescript-config/react-library.json",
-  "compilerOptions": {
-    "outDir": "dist"
-  },
-  "include": ["src"],
-  "exclude": ["node_modules", "dist"]
+    "compilerOptions": {
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "target": "ESNext",
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "jsx": "react-jsx",
+        "declaration": true,
+        "declarationMap": true,
+        "outDir": "./dist"
+    },
+    "include": [
+        "PopUpAlert.tsx",
+        "index.ts"
+    ]
 }
